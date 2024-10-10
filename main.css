@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    gap: 0;
+}
+
+p {
+    border: 1px dotted lightblue;
+    /* padding: 0.25em; */
+}
+
+.columns {
+    /* column-count: 4;
+    column-width: 10.6em; */
+    columns: 4 10.6em; /* Shorthand for above 2 lines */
+    gap: 1em;
+    column-rule: 0.25em solid pink; /* Line between two columns */
+}
+
+.columns h2 {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem;
+    break-inside: avoid; /* Avoids parts of the elements being spread across columns and keeps it together. */
+}
+
+.quote {
+    border: 1px dashed red;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0.5em;
+    column-span: all; /* Spans element across all columns. Don't use break-inside: avoid; because it prevents spanning columns. */
+}
+
+.nowrap {
+    white-space: nowrap; /* Keeps the spanned text together when wraping */
+}
